@@ -12,12 +12,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: var(--color-pinkletter);
-    font-family: "Sen", sans-serif;
 }
 
 body{
     background-color: var(--color-pinkDark);
+    height: 100vh;
+    color: var(--color-pinkletter);
+    font-family: "Sen", sans-serif;
 }
 
 .container{
