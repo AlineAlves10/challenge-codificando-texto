@@ -1,3 +1,4 @@
+<script src="app.js" defer></script>
 
 //CODIFICANDO O TEXTO ------------------------------------------------------
 let vogaiscriptografadas = {

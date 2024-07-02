@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+:root{
+    --color-pinkDark: #EC6F6F;
+    --color-pinkLight: #FCEEEE;
+    --color-pinkDL: #FFD6D6;
+    --color-pinkletter: #B15656;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-pinkletter);
+    font-family: "Sen", sans-serif;
+}
+
+body{
+    background-color: var(--color-pinkDark);
+}
+
+.container{
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*corpo-------------------------------------*/
+
+.card-main{
+    background-color: var(--color-pinkLight);
+    border-radius: 10px;
+    margin: 50px 0;
+}
+
+.container-main{
+    padding: 20px 20px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.container-tittle{
+    background-color: var(--color-pinkDL);
+    border-radius: 10px 10px 0 0;
+    height: 86px;
+    padding: 15px;
+}
+
+/*areas de textos-----------------------------------*/
+
+.container-rl{
+    display: flex;
+}
+
+.form-texto-input{
+    background-color: var(--color-pinkDL);
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 234px;
+    width: 100%;
+}
+
+.form-texto-input::placeholder{
+   color: var(--color-pinkletter);
+   
+}
+
+.form-texto-input:focus{
+    outline: none;
+}
+
+.div-left{
+    width: 100%;
+    
+}
+
+/*---*/
+
+.form-texto-output{
+    background-color: var(--color-pinkDL);
+    border: none;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 250px;
+    width: 100%;
+}
+
+.textarea-right{
+    background-color: var(--color-pinkDL);
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 370px;
+    width: 100%;
+}
+
+
+.form-texto-output::placeholder{
+    color: var(--color-pinkletter);
+}
+
+.form-texto-output:focus{
+    outline: none;
+}
+
+.div-right{
+    width: 100%;
+    margin: 0 10px 0 25px;
+}
+
+
+/*aviso--------------------------------------*/
+.aviso{
+    display: flex;
+    font-size: 14px;
+}
+
+.img-aviso{
+    margin: 0 7px;
+    height: 18px;
+    width: 18px;
+}
+
+/*botaos-------------------------------------*/
+
+.container-buttons{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom{
+    height: 58px;
+    width: 218px;
+    border-radius: 100px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.btn-c{
+    background-color: var(--color-pinkDark);
+    color: var(--color-pinkLight);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-d{
+    background-color: var(--color-pinkLight);
+    color: var(--color-pinkDark);
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid var(--color-pinkDark);
+}
+
+.buttom-copiar{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 21px 0;
+}
+
+
+
