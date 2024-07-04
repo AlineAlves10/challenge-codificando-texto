@@ -24,18 +24,17 @@ body{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 4% 20% 4.6% 20%;
-}
+    padding: 3.7% 20% 5% 20%;
 
-/*corpo-------------------------------------*/
+    position: relative;
+    padding-bottom: 100px;
+}
 
 .titulo-principal{
     font-family: 'Staatliches', sans-serif;
-    font-size: 58px;
+    font-size: 55px;
     margin: 0 0 3% 0;
 }
-
-/*areas de textos da esquerda-----------------------------------*/
 
 .container-input{
     display: flex;
@@ -78,8 +77,6 @@ body{
     max-width: 660px;
 }
 
-/*areas de textos da direita--------------------*/
-
 .div-right{
     width: 100%;
     margin: 0 0 0 15px;
@@ -118,7 +115,6 @@ body{
     outline: none;
 }
 
-/*aviso--------------------------------------*/
 .aviso{
     display: flex;
     font-size: 14px;
@@ -129,8 +125,6 @@ body{
     height: 18px;
     width: 18px;
 }
-
-/*botaos-------------------------------------*/
 
 .container-buttons{
     margin: 7% 0;
@@ -171,20 +165,27 @@ body{
     margin: 3% 11% 2% 11%;
 }
 
-
-/*footer----------------------------------------*/
-
-footer{
+.rodape{
     background: var(--color-blueDark);
     color: var(--color-white);
-    height: 53px;
-    align-items: center;
+    height: 70px;
     text-align: center;
     font-size: 16px;
     padding: 15px;
     font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-
-
-
+.redes-sociais{
+    display: flex;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 3px 0;
+    gap: 3px;
+    width: 27px;
+    height: 27px;
+}

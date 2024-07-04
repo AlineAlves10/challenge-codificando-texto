@@ -22,12 +22,3 @@ function copyToClipboard() {
         alert('Texto copiado para a área de transferência');
     })
 }
-
-//INVERTENDO O TEXTO-----------------------------------------------------------------
-
-//function inverterTexto(){
-  //  return textoNormal.split("").reverse().join("");
-//}
-
-//let textoInvertido= inverterTexto(fraseNormal);
-//console.log(textoInvertido);
