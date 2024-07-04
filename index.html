@@ -8,41 +8,39 @@
 </head>
 <body>
     <main class="container">
-        <section class="container-main"> 
-            <h1 class="titulo-principal">Criptografar textos</h1>
-
-            <div class="container-rl">
-                <div class="container-left">
-                    <form>
-                        <div>
-                            <textarea id="input" class="form-texto-input" placeholder="Digite seu texto"></textarea>
-                        </div>
-
-                        <div class="aviso">
-                            <img class="img-aviso" src="img/Group.png" alt="ponto de exclamação">
-                            <p>Apenas letras minúsculas e sem acento.</p>
-                        </div>
-
-                    </form>
+        <section class="container-main">
+            <h1 class="titulo-principal">Criptografando textos</h1>
+            <div class="container-input">
+                <div>
+                <div class="input-container">
+                    <textarea id="input-texto" class="form-texto-input" placeholder="Digite seu texto..."></textarea>
+                </div>
+                <div class="aviso">
+                    <img class="img-aviso" src="img/Group.png" alt="">
+                    <p>Apenas letras minusculas e sem acento.</p>
+                 </div>
+                 <div class="buttons">
                     <div class="container-buttons">
-                        <button onclick="criptografarTexto()" class="buttom btn-criptografar">Criptografar</button>
-                        <button onclick="" class="buttom btn-descriptografar">Descriptografar</button>
+                        <button onclick="criptografarTexto()" class="btn-criptografar buttom">Criptografar</button>
+                         <button onclick="descriptografarTexto()" class="btn-descriptografar buttom">Descriptografar</button>
                     </div>
+                   </div>
                 </div>
-                
-                <div class="div-right">
-                    <form>
-                        <div class="textarea-right">
-                            
-                        </div>
-                    </form>
-                </div>
+
+              <div id="output" class="form-texto-output div-right">
+                 <h2 class="titulo-segundario">Nenhuma mensagem encontrada... <img src="img/🔎︎.png" alt="foto lupa"></h2>
+                 <span class="span-abaixo">Digite um texto que você deseja criptografar ou descriptografar.</span>
+             </div>
             </div>
-        </section>
+
+         
+    </section>
     </main>
-    <script src="app.js" defer></script>
+
     <footer>
-        <p>Criado por Aline Alves</p>
+        <p>Feito por Aline</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

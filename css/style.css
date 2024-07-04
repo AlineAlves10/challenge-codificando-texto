@@ -21,11 +21,10 @@ body{
 }
 
 .container{
-    max-width: 990px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 5% 15%;
+    padding: 5% 20%;
 }
 
 /*corpo-------------------------------------*/
@@ -36,18 +35,19 @@ body{
 
 .titulo-principal{
     font-family: 'Staatliches', sans-serif;
-    font-size: 64px;
+    font-size: 58px;
     margin: 3% 0;
 }
 
-/*areas de textos da direita-----------------------------------*/
+/*areas de textos da esquerda-----------------------------------*/
 
-.container-rl{
+.container-input{
     display: flex;
+    justify-content: space-around;
 }
 
-.container-left{
-    width: 100%; 
+.input-container{
+    max-width: 450px;
 }
 
 .form-texto-input{
@@ -68,6 +68,58 @@ body{
 
 .form-texto-input:focus{
     outline: none;
+    color: var(--color-blueDark);
+    font-size: 20px;
+}
+
+.texto-output{
+    border: none;
+    background-color: var(--color-background);
+    padding: 10px 10px;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 400px;
+    max-width: 660px;
+}
+
+/*areas de textos da direita--------------------*/
+
+.div-right{
+    width: 100%;
+    margin: 0 0 0 15px;
+}
+
+.form-texto-output{
+    background-color: var(--color-background);
+    border: 3px solid var(--color-blueDark);
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 355px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.titulo-segundario{
+    font-size: 24px;
+    text-align: center;
+    padding: 30% 0;
+}
+
+.span-abaixo{
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.form-texto-output::placeholder{
+    color: var(--color-blueDark);
+}
+
+.form-texto-output:focus{
+    outline: none;
 }
 
 /*aviso--------------------------------------*/
@@ -85,7 +137,7 @@ body{
 /*botaos-------------------------------------*/
 
 .container-buttons{
-    margin: 8% 0;
+    margin: 7% 0;
     display: flex;
     justify-content: space-between;
 }
@@ -114,57 +166,15 @@ body{
     border: 2px solid var(--color-blueDark);
 }
 
-.buttom-copiar{
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 21px 0;
-}
-
 .btn-copiar{
     background-color: var(--color-background);
     color: var(--color-blueDark);
     font-size: 18px;
     font-weight: 600;
     border: 2px solid var(--color-blueDark);
+    margin: 3% 11% 2% 11%;
 }
 
-/*areas de textos da esquerda--------------------*/
-
-.div-right{
-    width: 100%;
-    margin: 0 10px 0 25px;
-}
-
-.form-texto-output{
-    background-color: var(--color-background);
-    border: none;
-    font-size: 16px;
-    resize: none; /*o user n conseguir mudar o tam*/
-    height: 250px;
-    width: 100%;
-}
-
-.textarea-right{
-    background-color: var(--color-background);
-    border: 3px solid var(--color-blueDark);
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 16px;
-    resize: none; /*o user n conseguir mudar o tam*/
-    height: 370px;
-    width: 247px;
-}
-
-
-.form-texto-output::placeholder{
-    color: var(--color-blueDark);
-}
-
-.form-texto-output:focus{
-    outline: none;
-}
 
 /*footer----------------------------------------*/
 

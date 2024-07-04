@@ -1,56 +1,40 @@
-
-
+var textoInput = document.querySelector("#input-texto");
+var textoutput = document.querySelector("#output");
+ 
 //CRIPTOGRAFANDO O TEXTO ------------------------------------------------------
-let vogaiscriptografadas = {
-    'a' : 'ai',
-    'e' : 'enter',
-    'i' : 'imes',
-    'o' : 'ober',
-    'u' : 'ufat',
+
+
+function criptografarTexto(){
+    var textoNormal = textoInput.value;
+
+    var fraseCriptografada = textoNormal.replace(/a/g, "ai").replace(/e/g, "enter").replace(/i/g, "imes").replace(/o/g, "ober").replace(/u/g, "ufat");
+
+    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto" class="texto-output">' + fraseCriptografada + '</textarea>' + '<button class="btn-copiar buttom" id="copiar" onclick="copiar()">Copiar</button>'
 }
-
-function criptografarTexto(textoNormal){
-    let frase = ''
-    for (let i = 0; i < textoNormal.length; i++) {
-        const letraPorLetra = textoNormal[i];
-
-        if (vogaiscriptografadas[letraPorLetra]){
-            frase += vogaiscriptografadas[letraPorLetra];
-        }else{
-            frase += letraPorLetra;
-        }
-    }
-
-    return frase
-}
-
-let fraseNormal = 'ola me chamo aline'
-let fraseCodificada = criptografarTexto(fraseNormal);
-console.log(fraseCodificada);
 
 //DESCRIPTOGRAFANDO O TEXTOOO--------------------------------------------------
 
-function descodificandoTexto(textoCodificado){
+function descriptografarTexto(){
+    var textoNormal = textoInput.value;
 
-    textoCodificado = textoCodificado.replace(/ai/g, 'a');
-    textoCodificado = textoCodificado.replace(/enter/g, 'e');
-    textoCodificado = textoCodificado.replace(/imes/g, 'i');
-    textoCodificado = textoCodificado.replace(/ober/g, 'o');
-    textoCodificado = textoCodificado.replace(/ufat/g, 'u');
+    var fraseDescriptografada = textoNormal.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
 
-    return textoCodificado
+    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto" class="texto-output">' + fraseDescriptografada + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 }
 
-let fraseCodificadaCopiar = 'Olai menter chaimober ailimesnenter';
-let fraseDescodificada = descodificandoTexto(fraseCodificadaCopiar);
-console.log(fraseDescodificada);
-
+function copiar() {
+    var textoCop = document.getElementById('input-texto');
+  
+    textoCop.select();
+    document.execCommand('copy');
+    alert("Texto copiado.");
+} 
 
 //INVERTENDO O TEXTO-----------------------------------------------------------------
 
-function inverterTexto(textoNormal){
-    return textoNormal.split("").reverse().join("");
-}
+//function inverterTexto(){
+  //  return textoNormal.split("").reverse().join("");
+//}
 
-let textoInvertido= inverterTexto(fraseNormal);
-console.log(textoInvertido);
+//let textoInvertido= inverterTexto(fraseNormal);
+//console.log(textoInvertido);
