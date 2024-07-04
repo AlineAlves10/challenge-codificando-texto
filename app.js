@@ -1,34 +1,27 @@
 var textoInput = document.querySelector("#input-texto");
-var textoutput = document.querySelector("#output");
- 
-//CRIPTOGRAFANDO O TEXTO ------------------------------------------------------
-
-
-function criptografarTexto(){
+        
+function criptografarTexto() {
     var textoNormal = textoInput.value;
 
-    var fraseCriptografada = textoNormal.replace(/a/g, "ai").replace(/e/g, "enter").replace(/i/g, "imes").replace(/o/g, "ober").replace(/u/g, "ufat");
+    var fraseCriptografada = textoNormal.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto" class="texto-output">' + fraseCriptografada + '</textarea>' + '<button class="btn-copiar buttom" id="copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('output').innerHTML = '<textarea readonly class="texto-output" id="texto-output">' + fraseCriptografada + '</textarea>' + '<button class="btn-copiar buttom" id="copiar" onclick="copyToClipboard()">Copiar</button>';
 }
 
-//DESCRIPTOGRAFANDO O TEXTOOO--------------------------------------------------
-
-function descriptografarTexto(){
+function descriptografarTexto() {
     var textoNormal = textoInput.value;
 
     var fraseDescriptografada = textoNormal.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto" class="texto-output">' + fraseDescriptografada + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('output').innerHTML = '<textarea readonly class="texto-output" id="texto-output">' + fraseDescriptografada + '</textarea>' + '<button class="btn-copiar buttom" id="copiar" onclick="copyToClipboard()">Copiar</button>';
 }
 
-function copiar() {
-    var textoCop = document.getElementById('input-texto');
-  
-    textoCop.select();
-    document.execCommand('copy');
-    alert("Texto copiado.");
-} 
+function copyToClipboard() {
+    var textoCopiado = document.querySelector("#texto-output").value;
+    navigator.clipboard.writeText(textoCopiado).then(() => {
+        alert('Texto copiado para a área de transferência');
+    })
+}
 
 //INVERTENDO O TEXTO-----------------------------------------------------------------
 
