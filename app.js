@@ -1,6 +1,6 @@
-<script src="app.js" defer></script>
 
-//CODIFICANDO O TEXTO ------------------------------------------------------
+
+//CRIPTOGRAFANDO O TEXTO ------------------------------------------------------
 let vogaiscriptografadas = {
     'a' : 'ai',
     'e' : 'enter',
@@ -9,7 +9,7 @@ let vogaiscriptografadas = {
     'u' : 'ufat',
 }
 
-function codificandoTexto(textoNormal){
+function criptografarTexto(textoNormal){
     let frase = ''
     for (let i = 0; i < textoNormal.length; i++) {
         const letraPorLetra = textoNormal[i];
@@ -25,10 +25,10 @@ function codificandoTexto(textoNormal){
 }
 
 let fraseNormal = 'ola me chamo aline'
-let fraseCodificada = codificandoTexto(fraseNormal);
+let fraseCodificada = criptografarTexto(fraseNormal);
 console.log(fraseCodificada);
 
-//DESCODICANDO O TEXTOOO--------------------------------------------------
+//DESCRIPTOGRAFANDO O TEXTOOO--------------------------------------------------
 
 function descodificandoTexto(textoCodificado){
 

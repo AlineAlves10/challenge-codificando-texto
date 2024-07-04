@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 
 :root{
-    --color-pinkDark: #EC6F6F;
-    --color-pinkLight: #FCEEEE;
-    --color-pinkDL: #FFD6D6;
-    --color-pinkletter: #B15656;
+    --color-blueDark: #044159;
+    --color-background: #85C8E2;
+    --color-white: #ffff;
 }
 
 *{
@@ -15,9 +14,9 @@
 }
 
 body{
-    background-color: var(--color-pinkDark);
-    height: 100vh;
-    color: var(--color-pinkletter);
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: var(--color-blueDark);
     font-family: "Sen", sans-serif;
 }
 
@@ -25,41 +24,37 @@ body{
     max-width: 990px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    padding: 5% 15%;
 }
+
 /*corpo-------------------------------------*/
 
-.card-main{
-    background-color: var(--color-pinkLight);
-    border-radius: 10px;
-    margin: 50px 0;
-}
-
 .container-main{
-    padding: 20px 20px;
+    margin: 5% 0 0 0;
 }
 
-h1{
-    font-size: 36px;
+.titulo-principal{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 64px;
+    margin: 3% 0;
 }
 
-.container-tittle{
-    background-color: var(--color-pinkDL);
-    border-radius: 10px 10px 0 0;
-    height: 86px;
-    padding: 15px;
-}
-
-/*areas de textos-----------------------------------*/
+/*areas de textos da direita-----------------------------------*/
 
 .container-rl{
     display: flex;
 }
 
+.container-left{
+    width: 100%; 
+}
+
 .form-texto-input{
-    background-color: var(--color-pinkDL);
+    background-color: var(--color-background);
+    border: 3px solid var(--color-blueDark);
     border-radius: 6px;
-    border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     resize: none; /*o user n conseguir mudar o tam*/
     height: 234px;
@@ -67,55 +62,13 @@ h1{
 }
 
 .form-texto-input::placeholder{
-   color: var(--color-pinkletter);
+   color: var(--color-blueDark);
    
 }
 
 .form-texto-input:focus{
     outline: none;
 }
-
-.div-left{
-    width: 100%;
-    
-}
-
-/*---*/
-
-.form-texto-output{
-    background-color: var(--color-pinkDL);
-    border: none;
-    font-size: 16px;
-    resize: none; /*o user n conseguir mudar o tam*/
-    height: 250px;
-    width: 100%;
-}
-
-.textarea-right{
-    background-color: var(--color-pinkDL);
-    border-radius: 6px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    resize: none; /*o user n conseguir mudar o tam*/
-    height: 370px;
-    width: 100%;
-}
-
-
-.form-texto-output::placeholder{
-    color: var(--color-pinkletter);
-}
-
-.form-texto-output:focus{
-    outline: none;
-}
-
-.div-right{
-    width: 100%;
-    margin: 0 10px 0 25px;
-}
-
 
 /*aviso--------------------------------------*/
 .aviso{
@@ -132,33 +85,33 @@ h1{
 /*botaos-------------------------------------*/
 
 .container-buttons{
-    margin: 30px 0;
+    margin: 8% 0;
     display: flex;
     justify-content: space-between;
 }
 
 .buttom{
-    height: 58px;
+    padding: 15px;
     width: 218px;
     border-radius: 100px;
     margin: 5px 5px;
     cursor: pointer;
 }
 
-.btn-c{
-    background-color: var(--color-pinkDark);
-    color: var(--color-pinkLight);
+.btn-criptografar{
+    background-color: var(--color-blueDark);
+    color: var(--color-white);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     border: none;
 }
 
-.btn-d{
-    background-color: var(--color-pinkLight);
-    color: var(--color-pinkDark);
+.btn-descriptografar{
+    background-color: var(--color-background);
+    color: var(--color-blueDark);
     font-size: 18px;
-    font-weight: 700;
-    border: 1px solid var(--color-pinkDark);
+    font-weight: 600;
+    border: 2px solid var(--color-blueDark);
 }
 
 .buttom-copiar{
@@ -168,6 +121,64 @@ h1{
     justify-content: center;
     padding: 21px 0;
 }
+
+.btn-copiar{
+    background-color: var(--color-background);
+    color: var(--color-blueDark);
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid var(--color-blueDark);
+}
+
+/*areas de textos da esquerda--------------------*/
+
+.div-right{
+    width: 100%;
+    margin: 0 10px 0 25px;
+}
+
+.form-texto-output{
+    background-color: var(--color-background);
+    border: none;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 250px;
+    width: 100%;
+}
+
+.textarea-right{
+    background-color: var(--color-background);
+    border: 3px solid var(--color-blueDark);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    resize: none; /*o user n conseguir mudar o tam*/
+    height: 370px;
+    width: 247px;
+}
+
+
+.form-texto-output::placeholder{
+    color: var(--color-blueDark);
+}
+
+.form-texto-output:focus{
+    outline: none;
+}
+
+/*footer----------------------------------------*/
+
+footer{
+    background: var(--color-blueDark);
+    color: var(--color-white);
+    height: 53px;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 400;
+}
+
 
 
 
