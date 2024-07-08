@@ -24,15 +24,14 @@ body{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 3.7% 20% 5% 20%;
-
+    padding: 5% 20%;
     position: relative;
     padding-bottom: 100px;
 }
 
 .titulo-principal{
     font-family: 'Staatliches', sans-serif;
-    font-size: 55px;
+    font-size: 3.43rem;
     margin: 0 0 3% 0;
 }
 
@@ -50,7 +49,7 @@ body{
     border: 3px solid var(--color-blueDark);
     border-radius: 6px;
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     resize: none; /*o user n conseguir mudar o tam*/
     height: 234px;
     width: 100%;
@@ -64,14 +63,14 @@ body{
 .form-texto-input:focus{
     outline: none;
     color: var(--color-blueDark);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .texto-output{
     border: none;
     background-color: var(--color-background);
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     resize: none; /*o user n conseguir mudar o tam*/
     height: 400px;
     max-width: 660px;
@@ -86,7 +85,7 @@ body{
     background-color: var(--color-background);
     border: 3px solid var(--color-blueDark);
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 1rem;
     resize: none; /*o user n conseguir mudar o tam*/
     height: 355px;
     width: 300px;
@@ -96,7 +95,7 @@ body{
 }
 
 .titulo-segundario{
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     padding: 30% 0;
 }
@@ -117,7 +116,7 @@ body{
 
 .aviso{
     display: flex;
-    font-size: 14px;
+    font-size: 0.87rem;
 }
 
 .img-aviso{
@@ -143,7 +142,7 @@ body{
 .btn-criptografar{
     background-color: var(--color-blueDark);
     color: var(--color-white);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     border: none;
 }
@@ -151,7 +150,7 @@ body{
 .btn-descriptografar{
     background-color: var(--color-background);
     color: var(--color-blueDark);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     border: 2px solid var(--color-blueDark);
 }
@@ -159,7 +158,7 @@ body{
 .btn-copiar{
     background-color: var(--color-background);
     color: var(--color-blueDark);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     border: 2px solid var(--color-blueDark);
     margin: 3% 11% 2% 11%;
@@ -170,7 +169,7 @@ body{
     color: var(--color-white);
     height: 70px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 15px;
     font-weight: 400;
     position: fixed;
